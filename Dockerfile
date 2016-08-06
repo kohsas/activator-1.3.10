@@ -1,6 +1,7 @@
 FROM java:8
 
 MAINTAINER Ashok Satyanarayana <ashok.satyanarayana@gmail.com>
+#copied from https://github.com/JeroenMinnaert/activator-docker
 
 ENV ACTIVATOR_VERSION 1.3.10
 
