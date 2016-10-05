@@ -21,7 +21,7 @@ EXPOSE 8888
 EXPOSE 9000
  
 # Default Entry Point
-ENTRYPOINT ["/opt/activator/activator", "-Dhttp.address=0.0.0.0"]
+ENTRYPOINT ["/opt/activator/bin/activator", "-Dhttp.address=0.0.0.0"]
 
 # Default Command
 CMD ["ui"]
