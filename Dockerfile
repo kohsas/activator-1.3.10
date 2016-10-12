@@ -11,6 +11,11 @@ RUN unzip /opt/typesafe-activator-$ACTIVATOR_VERSION.zip -d /opt
 RUN rm -f /opt/typesafe-activator-$ACTIVATOR_VERSION.zip
 RUN mv /opt/activator-dist-$ACTIVATOR_VERSION /opt/activator
   
+#install mysql client and colordiff
+RUN apt-get update \
+    && apt-get install -y mysql-client \
+    && apt-get install -y colordiff
+
 # Create a working directory to run your app from
 RUN mkdir /home/app
 WORKDIR /home/app
