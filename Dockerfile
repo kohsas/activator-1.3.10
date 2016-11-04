@@ -3,7 +3,7 @@ FROM java:8
 MAINTAINER Ashok Satyanarayana <ashok.satyanarayana@gmail.com>
 #copied from https://github.com/JeroenMinnaert/activator-docker
 
-ENV ACTIVATOR_VERSION 1.3.10
+ENV ACTIVATOR_VERSION 1.3.12
 
 # Download and install Activator 
 RUN wget --output-document /opt/typesafe-activator-$ACTIVATOR_VERSION.zip http://downloads.typesafe.com/typesafe-activator/$ACTIVATOR_VERSION/typesafe-activator-$ACTIVATOR_VERSION.zip
